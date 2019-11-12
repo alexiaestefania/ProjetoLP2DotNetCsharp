@@ -1,0 +1,11 @@
+F:\LP2 projeto\LP2Projeto\lp2_proj\lp2_proj\bin\Debug\lp2_proj.exe.config
+F:\LP2 projeto\LP2Projeto\lp2_proj\lp2_proj\bin\Debug\lp2_proj.exe
+F:\LP2 projeto\LP2Projeto\lp2_proj\lp2_proj\bin\Debug\lp2_proj.pdb
+F:\LP2 projeto\LP2Projeto\lp2_proj\lp2_proj\obj\Debug\lp2_proj.csprojAssemblyReference.cache
+F:\LP2 projeto\LP2Projeto\lp2_proj\lp2_proj\obj\Debug\lp2_proj.F_main.resources
+F:\LP2 projeto\LP2Projeto\lp2_proj\lp2_proj\obj\Debug\lp2_proj.Properties.Resources.resources
+F:\LP2 projeto\LP2Projeto\lp2_proj\lp2_proj\obj\Debug\lp2_proj.csproj.GenerateResource.cache
+F:\LP2 projeto\LP2Projeto\lp2_proj\lp2_proj\obj\Debug\lp2_proj.csproj.CoreCompileInputs.cache
+F:\LP2 projeto\LP2Projeto\lp2_proj\lp2_proj\obj\Debug\lp2_proj.exe
+F:\LP2 projeto\LP2Projeto\lp2_proj\lp2_proj\obj\Debug\lp2_proj.pdb
+F:\LP2 projeto\LP2Projeto\lp2_proj\lp2_proj\obj\Debug\lp2_proj.Form2.resources
