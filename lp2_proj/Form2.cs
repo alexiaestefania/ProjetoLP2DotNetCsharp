@@ -56,20 +56,24 @@ namespace lp2_proj
 
             // listagem de textboxes
 
-            Comandos.Parameters.Add(new SqlParameter("@cpf", TBCPF));
-            Comandos.Parameters.Add(new SqlParameter("@nome", TBCPF));
-            Comandos.Parameters.Add(new SqlParameter("@ender", TBCPF));
-            Comandos.Parameters.Add(new SqlParameter("@tele", TBCPF));
-            Comandos.Parameters.Add(new SqlParameter("@email", TBCPF));
-            Comandos.Parameters.Add(new SqlParameter("@nasc", TBCPF));
-            Comandos.Parameters.Add(new SqlParameter("@cpf", TBCPF));
+            Comandos.Parameters.Add(new SqlParameter("@cpf", TBCPF.Text));
+            Comandos.Parameters.Add(new SqlParameter("@nome", TBnome.Text));
+            Comandos.Parameters.Add(new SqlParameter("@ender", TBender.Text));
+            Comandos.Parameters.Add(new SqlParameter("@tele", TBtel.Text));
+            Comandos.Parameters.Add(new SqlParameter("@email", TBemail.Text));
+            Comandos.Parameters.Add(new SqlParameter("@nasc", TBnasc.Text));
+            Comandos.Parameters.Add(new SqlParameter("@medvenc", TBvenc.Text));
+            Comandos.Parameters.Add(new SqlParameter("@prof", TBprof.Text));
 
-            if (radioButton1.Checked)
+            if (medbutton.Checked)
             {
-               
+                Comandos.Parameters.Add(new SqlParameter("@med", 'S'));
             }
-
-              
+            else
+                Comandos.Parameters.Add(new SqlParameter("@med", 'N'));
+            Comandos.ExecuteNonQuery();
+            MessageBox.Show("Cliente cadastrado com sucesso.", "Cadastro de Cliente");
+            conexaobanco.Close();
 
 
 
