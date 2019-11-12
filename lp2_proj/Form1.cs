@@ -44,7 +44,17 @@ namespace lp2_proj
         private void button2_Click(object sender, EventArgs e)
         {
             Form2 telacli = new Form2();
-            telacli.Show();
+            telacli.ShowDialog();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
