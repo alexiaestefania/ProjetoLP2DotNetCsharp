@@ -31,7 +31,7 @@
             this.TBvenc = new System.Windows.Forms.MaskedTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.medbutton2 = new System.Windows.Forms.RadioButton();
             this.medbutton = new System.Windows.Forms.RadioButton();
             this.TBemail = new System.Windows.Forms.TextBox();
             this.TBnasc = new System.Windows.Forms.MaskedTextBox();
@@ -74,7 +74,7 @@
             this.panel1.Controls.Add(this.TBvenc);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.medbutton2);
             this.panel1.Controls.Add(this.medbutton);
             this.panel1.Controls.Add(this.TBemail);
             this.panel1.Controls.Add(this.TBnasc);
@@ -123,15 +123,15 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Atestado Médico:";
             // 
-            // radioButton2
+            // medbutton2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(274, 197);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(71, 17);
-            this.radioButton2.TabIndex = 13;
-            this.radioButton2.Text = "Pendente";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.medbutton2.AutoSize = true;
+            this.medbutton2.Location = new System.Drawing.Point(274, 197);
+            this.medbutton2.Name = "medbutton2";
+            this.medbutton2.Size = new System.Drawing.Size(71, 17);
+            this.medbutton2.TabIndex = 13;
+            this.medbutton2.Text = "Pendente";
+            this.medbutton2.UseVisualStyleBackColor = true;
             // 
             // medbutton
             // 
@@ -175,7 +175,7 @@
             // 
             this.TBCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.TBCPF.Location = new System.Drawing.Point(197, 77);
-            this.TBCPF.Mask = "000.000.000-00";
+            this.TBCPF.Mask = "000000000-00";
             this.TBCPF.Name = "TBCPF";
             this.TBCPF.Size = new System.Drawing.Size(100, 23);
             this.TBCPF.TabIndex = 8;
@@ -308,7 +308,7 @@
             // 
             this.TBprof.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.TBprof.Location = new System.Drawing.Point(56, 56);
-            this.TBprof.Mask = "000.000.000-00";
+            this.TBprof.Mask = "000000000-00";
             this.TBprof.Name = "TBprof";
             this.TBprof.Size = new System.Drawing.Size(100, 23);
             this.TBprof.TabIndex = 18;
@@ -355,6 +355,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Limpar Campos";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pROFCPFTableAdapter1
             // 
@@ -406,7 +407,7 @@
         private System.Windows.Forms.MaskedTextBox TBvenc;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton medbutton2;
         private System.Windows.Forms.RadioButton medbutton;
         private System.Windows.Forms.TextBox TBemail;
         private System.Windows.Forms.Panel panel2;

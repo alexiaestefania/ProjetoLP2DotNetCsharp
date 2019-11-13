@@ -16,5 +16,12 @@ namespace lp2_proj
         {
             InitializeComponent();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'dBFITFREEV1DataSet7.CLIENTVIEW'. Você pode movê-la ou removê-la conforme necessário.
+            this.cLIENTVIEWTableAdapter.Fill(this.dBFITFREEV1DataSet7.CLIENTVIEW);
+
+        }
     }
 }

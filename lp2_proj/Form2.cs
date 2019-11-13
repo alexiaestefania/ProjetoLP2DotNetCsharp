@@ -78,5 +78,19 @@ namespace lp2_proj
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TBCPF.Text = "";
+            TBnome.Text = "";
+            TBender.Text = "";
+            TBemail.Text = "";
+            TBtel.Text = "";
+            TBnasc.Text = "";
+            TBvenc.Text = "";
+            TBprof.Text = "";
+            medbutton.Checked = false;
+            medbutton2.Checked = false;
+        }
     }
 }
