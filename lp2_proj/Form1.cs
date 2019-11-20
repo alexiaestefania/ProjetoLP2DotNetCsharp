@@ -54,7 +54,20 @@ namespace lp2_proj
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Form3 consclick = new Form3();
+            consclick.ShowDialog();
+        }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form4 procad = new Form4();
+            procad.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form6 finmenu = new Form6();
+            finmenu.ShowDialog();
         }
     }
 }

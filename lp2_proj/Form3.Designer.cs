@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dBFITFREEV1DataSet7 = new lp2_proj.DBFITFREEV1DataSet7();
-            this.cLIENTVIEWBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cLIENTVIEWTableAdapter = new lp2_proj.DBFITFREEV1DataSet7TableAdapters.CLIENTVIEWTableAdapter();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cPFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.endereçoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,9 +39,12 @@
             this.statusDoAtestadoMédicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vencimentoDoAtestadoMédicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.professorResponsávelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cLIENTVIEWBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dBFITFREEV1DataSet7 = new lp2_proj.DBFITFREEV1DataSet7();
+            this.cLIENTVIEWTableAdapter = new lp2_proj.DBFITFREEV1DataSet7TableAdapters.CLIENTVIEWTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dBFITFREEV1DataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTVIEWBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBFITFREEV1DataSet7)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -64,22 +64,8 @@
             this.dataGridView1.DataSource = this.cLIENTVIEWBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(28, 30);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1049, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(1049, 474);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // dBFITFREEV1DataSet7
-            // 
-            this.dBFITFREEV1DataSet7.DataSetName = "DBFITFREEV1DataSet7";
-            this.dBFITFREEV1DataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cLIENTVIEWBindingSource
-            // 
-            this.cLIENTVIEWBindingSource.DataMember = "CLIENTVIEW";
-            this.cLIENTVIEWBindingSource.DataSource = this.dBFITFREEV1DataSet7;
-            // 
-            // cLIENTVIEWTableAdapter
-            // 
-            this.cLIENTVIEWTableAdapter.ClearBeforeFill = true;
             // 
             // nomeDataGridViewTextBoxColumn
             // 
@@ -135,6 +121,20 @@
             this.professorResponsávelDataGridViewTextBoxColumn.HeaderText = "Professor Responsável";
             this.professorResponsávelDataGridViewTextBoxColumn.Name = "professorResponsávelDataGridViewTextBoxColumn";
             // 
+            // cLIENTVIEWBindingSource
+            // 
+            this.cLIENTVIEWBindingSource.DataMember = "CLIENTVIEW";
+            this.cLIENTVIEWBindingSource.DataSource = this.dBFITFREEV1DataSet7;
+            // 
+            // dBFITFREEV1DataSet7
+            // 
+            this.dBFITFREEV1DataSet7.DataSetName = "DBFITFREEV1DataSet7";
+            this.dBFITFREEV1DataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cLIENTVIEWTableAdapter
+            // 
+            this.cLIENTVIEWTableAdapter.ClearBeforeFill = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,8 +148,8 @@
             this.Text = "Fit Free - Consulta de Clientes";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dBFITFREEV1DataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTVIEWBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBFITFREEV1DataSet7)).EndInit();
             this.ResumeLayout(false);
 
         }
