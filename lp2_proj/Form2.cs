@@ -22,9 +22,11 @@ namespace lp2_proj
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'fITFREEDBDataSet1.PROFCPF' table. You can move, or remove it, as needed.
+            this.pROFCPFTableAdapter2.Fill(this.fITFREEDBDataSet1.PROFCPF);
             // TODO: esta linha de código carrega dados na tabela 'dBFITFREEV1DataSet6.PROFCPF'. Você pode movê-la ou removê-la conforme necessário.
-            this.pROFCPFTableAdapter1.Fill(this.dBFITFREEV1DataSet6.PROFCPF);
-           
+
+
 
 
         }
@@ -91,6 +93,11 @@ namespace lp2_proj
             TBprof.Text = "";
             medbutton.Checked = false;
             medbutton2.Checked = false;
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

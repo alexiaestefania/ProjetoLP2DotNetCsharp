@@ -118,6 +118,52 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-
-  
+  <data name="lifting-clipart-weight-training-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lifting-clipart-weight-training-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TITLE 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TITLE 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rm143-jj-10-d-l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rm143-jj-10-d-l.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6cb1fa98df7a47f834af9b21a53a6f601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6cb1fa98df7a47f834af9b21a53a6f60.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BUTT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BUTT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wall3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wall3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6cb1fa98df7a47f834af9b21a53a6f60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6cb1fa98df7a47f834af9b21a53a6f60.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ba20c541798109.57b4afecb91d4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ba20c541798109.57b4afecb91d4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DFGDFGDF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DFGDFGDF.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="butt2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\butt2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BUTBACK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BUTBACK.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="48c409b6302ac41df08a63d8aa63361f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\48c409b6302ac41df08a63d8aa63361f.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TITLE 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TITLE 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TITLE 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TITLE 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ab633fd0aa1fad4bc88a908c61003ea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ab633fd0aa1fad4bc88a908c61003ea1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

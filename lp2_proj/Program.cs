@@ -17,7 +17,7 @@ namespace lp2_proj
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new F_main());
+            Application.Run(new LOGINPAGE());
         }
     }
 }

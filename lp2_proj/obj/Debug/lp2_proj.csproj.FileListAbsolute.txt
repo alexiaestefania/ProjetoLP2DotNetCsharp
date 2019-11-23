@@ -23,3 +23,18 @@ F:\LP2 projeto\LP2Projeto\PROJLP2\lp2_proj\bin\Debug\lp2_proj.pdb
 F:\LP2 projeto\LP2Projeto\PROJLP2\lp2_proj\obj\Debug\lp2_proj.Form3.resources
 F:\LP2 projeto\LP2Projeto\PROJLP2\lp2_proj\obj\Debug\lp2_proj.Form4.resources
 F:\LP2 projeto\LP2Projeto\PROJLP2\lp2_proj\obj\Debug\lp2_proj.Form6.resources
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\bin\Debug\lp2_proj.exe.config
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\bin\Debug\lp2_proj.exe
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\bin\Debug\lp2_proj.pdb
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.csprojAssemblyReference.cache
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.F_main.resources
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.Form2.resources
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.Form3.resources
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.Form4.resources
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.Form6.resources
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.Properties.Resources.resources
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.csproj.GenerateResource.cache
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.csproj.CoreCompileInputs.cache
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.exe
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.pdb
+G:\Users\Steff\Downloads\ProjetoLP2DotNetCsharp-master\ProjetoLP2DotNetCsharp-master\lp2_proj\obj\Debug\lp2_proj.LOGINPAGE.resources

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>lp2_proj.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -91,6 +94,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBFITFREEV1DataSet8.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FITFREEDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITFREEDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITFREEDBDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITFREEDBDataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,17 +134,11 @@
     <Compile Include="Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="LOGINPAGE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form8.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <Compile Include="LOGINPAGE.Designer.cs">
+      <DependentUpon>LOGINPAGE.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -149,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form6.resx">
       <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGINPAGE.resx">
+      <DependentUpon>LOGINPAGE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -254,6 +264,28 @@
     <None Include="DBFITFREEV1DataSet8.xss">
       <DependentUpon>DBFITFREEV1DataSet8.xsd</DependentUpon>
     </None>
+    <None Include="FITFREEDBDataSet1.xsc">
+      <DependentUpon>FITFREEDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITFREEDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITFREEDBDataSet1.xss">
+      <DependentUpon>FITFREEDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet11.xsc">
+      <DependentUpon>FITFREEDBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITFREEDBDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITFREEDBDataSet11.xss">
+      <DependentUpon>FITFREEDBDataSet11.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -283,6 +315,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wall3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rm143-jj-10-d-l.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6cb1fa98df7a47f834af9b21a53a6f60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48c409b6302ac41df08a63d8aa63361f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTBACK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DFGDFGDF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ba20c541798109.57b4afecb91d4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TITLE 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lifting-clipart-weight-training-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TITLE 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TITLE 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ab633fd0aa1fad4bc88a908c61003ea1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

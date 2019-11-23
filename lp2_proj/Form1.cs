@@ -54,20 +54,43 @@ namespace lp2_proj
 
         private void button3_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+
+        private void Button1_Click_2(object sender, EventArgs e)
+        {
+            Form2 telacli = new Form2();
+            telacli.ShowDialog();
+        }
+
+        private void Button2_Click_1(object sender, EventArgs e)
+        {
             Form3 consclick = new Form3();
             consclick.ShowDialog();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             Form4 procad = new Form4();
             procad.ShowDialog();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void Button3_Click_1(object sender, EventArgs e)
         {
             Form6 finmenu = new Form6();
             finmenu.ShowDialog();
         }
     }
-}
+    }
+
