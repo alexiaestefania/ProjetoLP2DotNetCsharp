@@ -67,6 +67,11 @@ as
 
 select PROF_Nome as 'Nome', PROF_CPF as 'CPF' FROM Professor
 
+    PROF_Ender				VARCHAR(100),
+    PROF_Tel				VARCHAR(20),
+    PROF_Nasc				DATE
+);
+
 
 
 CREATE VIEW CLIENTVIEW 
@@ -85,12 +90,25 @@ SELECT
     CLI_MedVenc as 'Vencimento do Atestado Médico',
 	PROF_Nome as 'Professor Responsável'
 
-    from Cliente inner join Professor on Cliente.fk_Professor_PROF_CPF = Professor.PROF_CPF 
+FROM Cliente inner join Professor on Cliente.fk_Professor_PROF_CPF = Professor.PROF_CPF 
 
 
+CREATE VIEW ProfCadastros
 
-	SELECT * FROM Mensalidade
+as
 
-	INSERT INTO Auth VALUES
-	('admin', 'admin')
+select PROF_Nome as 'Nome', PROF_CPF as 'CPF',  PROF_Ender as 'Endereço', PROF_Tel as 'Telefone', PROF_Nasc	as 'Data de Nascimento' FROM Professor
+
+
+		
+
+
+CREATE VIEW Boleto
+
+AS
+
+SELECT PG_ID as 'Número', PG_Valor as 'Valor', PG_Ref as 'Mês Referente', CLI_Nome as 'Nome do Cliente'
+FROM Mensalidade inner join Cliente on Mensalidade.fk_Cliente_CLI_CPF = CLI_CPF
+
+
 
