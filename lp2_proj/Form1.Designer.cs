@@ -31,16 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_main));
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.dBFITFREEV1DataSet = new lp2_proj.DBFITFREEV1DataSet();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteTableAdapter = new lp2_proj.DBFITFREEV1DataSetTableAdapters.ClienteTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dBFITFREEV1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,19 +47,9 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
-            // dBFITFREEV1DataSet
-            // 
-            this.dBFITFREEV1DataSet.DataSetName = "DBFITFREEV1DataSet";
-            this.dBFITFREEV1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // clienteBindingSource
             // 
             this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.dBFITFREEV1DataSet;
-            // 
-            // clienteTableAdapter
-            // 
-            this.clienteTableAdapter.ClearBeforeFill = true;
             // 
             // button1
             // 
@@ -104,7 +91,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(10, 374);
+            this.button4.Location = new System.Drawing.Point(12, 374);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(149, 71);
             this.button4.TabIndex = 18;
@@ -120,7 +107,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(10, 297);
+            this.button3.Location = new System.Drawing.Point(12, 451);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(149, 71);
             this.button3.TabIndex = 20;
@@ -136,21 +123,22 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(10, 451);
+            this.button5.Location = new System.Drawing.Point(10, 297);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(149, 71);
             this.button5.TabIndex = 22;
-            this.button5.Text = "Sobre o Sistema";
+            this.button5.Text = "Cadastrar Novo Professor";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::lp2_proj.Properties.Resources.TITLE_2;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(770, -19);
+            this.pictureBox1.Location = new System.Drawing.Point(672, -30);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(316, 254);
+            this.pictureBox1.Size = new System.Drawing.Size(399, 368);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
@@ -177,7 +165,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FitFree";
             this.Load += new System.EventHandler(this.F_main_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dBFITFREEV1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -186,9 +173,9 @@
 
         #endregion
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private DBFITFREEV1DataSet dBFITFREEV1DataSet;
+
         private System.Windows.Forms.BindingSource clienteBindingSource;
-        private DBFITFREEV1DataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
+
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;

@@ -103,6 +103,16 @@ namespace lp2_proj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap b43799373adcfe4eb738048cdc8a447b {
+            get {
+                object obj = ResourceManager.GetObject("b43799373adcfe4eb738048cdc8a447b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ba20c541798109_57b4afecb91d4 {
             get {
                 object obj = ResourceManager.GetObject("ba20c541798109.57b4afecb91d4", resourceCulture);
@@ -163,9 +173,49 @@ namespace lp2_proj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fdf03373b9578db3ea13358a9b7473ed {
+            get {
+                object obj = ResourceManager.GetObject("fdf03373b9578db3ea13358a9b7473ed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lifting_clipart_weight_training_3 {
             get {
                 object obj = ResourceManager.GetObject("lifting-clipart-weight-training-3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo1 {
+            get {
+                object obj = ResourceManager.GetObject("logo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_creative_synthesis_neon_gradient_image_41603 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-creative-synthesis-neon-gradient-image_41603", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap preview_249306_t2du5CLepT_high_0014 {
+            get {
+                object obj = ResourceManager.GetObject("preview-249306-t2du5CLepT-high_0014", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

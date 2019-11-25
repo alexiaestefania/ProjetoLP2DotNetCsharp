@@ -49,7 +49,7 @@ namespace lp2_proj
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string Caminho = "Data Source=LAB02-PC16\\SQLEXPRESS;Initial Catalog=DBFITFREEV1;Integrated Security=SSPI";
+            string Caminho = "Data Source=DESKTOP-D46400L\\SQLEXPRESS;Initial Catalog=FITFREEDB;Integrated Security=SSPI";
             SqlConnection conexaobanco = new SqlConnection(Caminho);
             conexaobanco.Open();
             SqlCommand Comandos = new SqlCommand();

@@ -49,51 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBFITFREEV1DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFITFREEV1DataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DBFITFREEV1DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFITFREEV1DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DBFITFREEV1DataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFITFREEV1DataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DBFITFREEV1DataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFITFREEV1DataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DBFITFREEV1DataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFITFREEV1DataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DBFITFREEV1DataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFITFREEV1DataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DBFITFREEV1DataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFITFREEV1DataSet6.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DBFITFREEV1DataSet7.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFITFREEV1DataSet7.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DBFITFREEV1DataSet8.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFITFREEV1DataSet8.xsd</DependentUpon>
-    </Compile>
     <Compile Include="FITFREEDBDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -103,6 +58,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FITFREEDBDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITFREEDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITFREEDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITFREEDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITFREEDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITFREEDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITFREEDBDataSet4.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -134,6 +104,12 @@
     <Compile Include="Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
     <Compile Include="LOGINPAGE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +133,9 @@
     <EmbeddedResource Include="Form6.resx">
       <DependentUpon>Form6.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LOGINPAGE.resx">
       <DependentUpon>LOGINPAGE.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,105 +144,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="DBFITFREEV1DataSet.xsc">
-      <DependentUpon>DBFITFREEV1DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBFITFREEV1DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBFITFREEV1DataSet.xss">
-      <DependentUpon>DBFITFREEV1DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet1.xsc">
-      <DependentUpon>DBFITFREEV1DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBFITFREEV1DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBFITFREEV1DataSet1.xss">
-      <DependentUpon>DBFITFREEV1DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet2.xsc">
-      <DependentUpon>DBFITFREEV1DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBFITFREEV1DataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBFITFREEV1DataSet2.xss">
-      <DependentUpon>DBFITFREEV1DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet3.xsc">
-      <DependentUpon>DBFITFREEV1DataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBFITFREEV1DataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBFITFREEV1DataSet3.xss">
-      <DependentUpon>DBFITFREEV1DataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet4.xsc">
-      <DependentUpon>DBFITFREEV1DataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBFITFREEV1DataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBFITFREEV1DataSet4.xss">
-      <DependentUpon>DBFITFREEV1DataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet5.xsc">
-      <DependentUpon>DBFITFREEV1DataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBFITFREEV1DataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBFITFREEV1DataSet5.xss">
-      <DependentUpon>DBFITFREEV1DataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet6.xsc">
-      <DependentUpon>DBFITFREEV1DataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBFITFREEV1DataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBFITFREEV1DataSet6.xss">
-      <DependentUpon>DBFITFREEV1DataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet7.xsc">
-      <DependentUpon>DBFITFREEV1DataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet7.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBFITFREEV1DataSet7.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBFITFREEV1DataSet7.xss">
-      <DependentUpon>DBFITFREEV1DataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet8.xsc">
-      <DependentUpon>DBFITFREEV1DataSet8.xsd</DependentUpon>
-    </None>
-    <None Include="DBFITFREEV1DataSet8.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBFITFREEV1DataSet8.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBFITFREEV1DataSet8.xss">
-      <DependentUpon>DBFITFREEV1DataSet8.xsd</DependentUpon>
-    </None>
     <None Include="FITFREEDBDataSet1.xsc">
       <DependentUpon>FITFREEDBDataSet1.xsd</DependentUpon>
     </None>
@@ -285,6 +165,39 @@
     </None>
     <None Include="FITFREEDBDataSet11.xss">
       <DependentUpon>FITFREEDBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet2.xsc">
+      <DependentUpon>FITFREEDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITFREEDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITFREEDBDataSet2.xss">
+      <DependentUpon>FITFREEDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet3.xsc">
+      <DependentUpon>FITFREEDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITFREEDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITFREEDBDataSet3.xss">
+      <DependentUpon>FITFREEDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet4.xsc">
+      <DependentUpon>FITFREEDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITFREEDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITFREEDBDataSet4.xss">
+      <DependentUpon>FITFREEDBDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -357,6 +270,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ab633fd0aa1fad4bc88a908c61003ea1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b43799373adcfe4eb738048cdc8a447b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview-249306-t2du5CLepT-high_0014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-creative-synthesis-neon-gradient-image_41603.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fdf03373b9578db3ea13358a9b7473ed.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

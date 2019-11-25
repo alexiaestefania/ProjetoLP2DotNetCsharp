@@ -82,14 +82,22 @@ namespace lp2_proj
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            Form4 procad = new Form4();
-            procad.ShowDialog();
+            Form7 PROF = new Form7();
+            PROF.ShowDialog();
+
+           
         }
 
         private void Button3_Click_1(object sender, EventArgs e)
         {
             Form6 finmenu = new Form6();
             finmenu.ShowDialog();
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            Form4 procad = new Form4();
+            procad.ShowDialog();
         }
     }
     }

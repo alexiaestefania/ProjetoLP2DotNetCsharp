@@ -23,5 +23,15 @@ namespace lp2_proj
             this.cLIENTVIEWTableAdapter.Fill(this.dBFITFREEV1DataSet7.CLIENTVIEW);
 
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

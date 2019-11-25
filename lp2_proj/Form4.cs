@@ -20,7 +20,7 @@ namespace lp2_proj
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string Caminho = "Data Source=LAB02-PC16\\SQLEXPRESS;Initial Catalog=DBFITFREEV1;Integrated Security=SSPI";
+            string Caminho = "Data Source=DESKTOP-D46400L\\SQLEXPRESS;Initial Catalog=FITFREEDB;Integrated Security=SSPI";
             SqlConnection conexaobanco = new SqlConnection(Caminho);
             conexaobanco.Open();
             SqlCommand Comandos = new SqlCommand();
@@ -35,10 +35,7 @@ namespace lp2_proj
             Comandos.ExecuteNonQuery();
 
             MessageBox.Show("Professor cadastrado com sucesso.", "Cadastro de Professor");
-            this.BindingContext[this.dataGridView1.DataSource].EndCurrentEdit();
-            this.dataGridView1.Refresh(); // Make sure this comes first
 
-            this.dataGridView1.Parent.Refresh(); // Make sure this comes second
 
 
             conexaobanco.Close();
@@ -65,8 +62,9 @@ namespace lp2_proj
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'dBFITFREEV1DataSet8.PROFVIEW'. Você pode movê-la ou removê-la conforme necessário.
-            this.pROFVIEWTableAdapter.Fill(this.dBFITFREEV1DataSet8.PROFVIEW);
+            // TODO: This line of code loads data into the 'fITFREEDBDataSet3.ProfCadastros' table. You can move, or remove it, as needed.
+            this.profCadastrosTableAdapter.Fill(this.fITFREEDBDataSet3.ProfCadastros);
+
 
         }
 

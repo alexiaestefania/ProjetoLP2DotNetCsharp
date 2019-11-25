@@ -16,5 +16,12 @@ namespace lp2_proj
         {
             InitializeComponent();
         }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'fITFREEDBDataSet4.ProfCadastros' table. You can move, or remove it, as needed.
+            this.profCadastrosTableAdapter.Fill(this.fITFREEDBDataSet4.ProfCadastros);
+
+        }
     }
 }

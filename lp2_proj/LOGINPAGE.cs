@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,12 @@ namespace lp2_proj
     {
         public LOGINPAGE()
         {
+
+
+
             InitializeComponent();
+
+            //"select userid,password from login where userid='" + textBox1.Text + "'and password='" + text            Box2.Text + "'", con); 
         }
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
@@ -26,5 +32,42 @@ namespace lp2_proj
         {
 
         }
-    }
+
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+
+            string Caminho = "Data Source=DESKTOP-D46400L\\SQLEXPRESS;Initial Catalog=FITFREEDB;Integrated Security=SSPI";
+            SqlConnection conexaobanco = new SqlConnection(Caminho);
+
+                conexaobanco.Open();
+                SqlCommand Comandos = new SqlCommand();
+                Comandos.Connection = conexaobanco;
+                Comandos.CommandText = "SELECT * FROM Auth WHERE Authlog = @Authlog and Authpw = @Authpw";
+                Comandos.Parameters.Add(new SqlParameter("@Authlog", textBox1.Text));
+                Comandos.Parameters.Add(new SqlParameter("@Authpw", textBox2.Text));
+
+                Comandos.CommandType = CommandType.Text;
+                SqlDataReader Autentica = Comandos.ExecuteReader();
+
+            if (Autentica.Read())
+            {
+                MessageBox.Show("Autenticação correta. Bem vindo, " + textBox1.Text, "Bem-Vindo ao FitFree!");
+                F_main telacli = new F_main();
+                telacli.Show();
+                
+            }
+            else
+            {
+                MessageBox.Show("Usuário ou senha incorretos. Verifique suas credenciais.", "Falha de autenticação");
+            }      
+                conexaobanco.Close();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    }  
 }

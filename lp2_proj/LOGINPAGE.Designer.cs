@@ -2,6 +2,8 @@
 {
     partial class LOGINPAGE
     {
+
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -113,6 +115,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(217, 20);
             this.textBox2.TabIndex = 29;
+            this.textBox2.UseSystemPasswordChar = true;
             this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // button1
@@ -129,6 +132,7 @@
             this.button1.TabIndex = 30;
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -144,6 +148,7 @@
             this.button2.TabIndex = 31;
             this.button2.Text = "SAIR";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // LOGINPAGE
             // 
