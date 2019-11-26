@@ -53,3 +53,4 @@ G:\Users\Steff\Escola\LP2 Projeto\lp2_proj\obj\Debug\lp2_proj.csproj.GenerateRes
 G:\Users\Steff\Escola\LP2 Projeto\lp2_proj\obj\Debug\lp2_proj.csproj.CoreCompileInputs.cache
 G:\Users\Steff\Escola\LP2 Projeto\lp2_proj\obj\Debug\lp2_proj.exe
 G:\Users\Steff\Escola\LP2 Projeto\lp2_proj\obj\Debug\lp2_proj.pdb
+G:\Users\Steff\Escola\LP2 Projeto\lp2_proj\obj\Debug\lp2_proj.Form7.resources

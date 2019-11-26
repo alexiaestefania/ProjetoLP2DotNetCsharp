@@ -99,6 +99,16 @@ namespace lp2_proj
             Form4 procad = new Form4();
             procad.ShowDialog();
         }
+
+        private void Button6_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("FitFree criado por Aléxia Estefânia, como projeto em Linguagem de Porgramação II. Novembro, 2019.", "Sobre o FITFREE");
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
     }
 

@@ -5,10 +5,10 @@ USE FITFREEDB
 
 CREATE TABLE Auth (
 	Authlog		VARCHAR(20)		PRIMARY KEY,
-	Authpw		VARCHAR(20)		NOT NULL
+	Authpw		VARCHAR(20)		
 	)
 
-
+	DROP TABLE Cliente
 
 CREATE TABLE Cliente (
     CLI_CPF					VARCHAR(20)						PRIMARY KEY,
@@ -16,35 +16,26 @@ CREATE TABLE Cliente (
     CLI_Ender				VARCHAR(100),
     CLI_Tel					VARCHAR(20),
     CLI_Email				VARCHAR(40),
-    CLI_Nasc				DATE,
+    CLI_Nasc				VARCHAR(10),
     CLI_Medic				CHAR(1),
-    CLI_MedVenc				DATE,
+    CLI_MedVenc				VARCHAR(10),
     fk_Professor_PROF_CPF	VARCHAR(20)
 );
 
 CREATE TABLE Mensalidade (
     PG_ID					INT IDENTITY						PRIMARY KEY,
     PG_Valor				SMALLMONEY,
-    PG_Ref					DATE,
+    PG_Ref					VARCHAR(10),
 	fk_Cliente_CLI_CPF		VARCHAR(14)
 );
 
-CREATE TABLE Treino (
-    TR_ID					INT IDENTITY					PRIMARY KEY,
-    TR_Tipo					VARCHAR(10),
-    TR_Reps					CHAR(1),
-    TR_Exerc1				TEXT,
-    TR_Exerc2				TEXT,
-    TR_Exerc3				TEXT,
-    TR_Obs					TEXT,
-);
 
 CREATE TABLE Professor (
     PROF_CPF				VARCHAR(20)						PRIMARY KEY,
     PROF_Nome				VARCHAR(60),
     PROF_Ender				VARCHAR(100),
     PROF_Tel				VARCHAR(20),
-    PROF_Nasc				DATE
+    PROF_Nasc				VARCHAR(10)
 );
 
 ALTER TABLE Cliente ADD CONSTRAINT FK_Cliente_2
@@ -88,7 +79,7 @@ SELECT
     CLI_Nasc as 'Data de Nascimento',
     CLI_Medic as 'Status do Atestado Médico',
     CLI_MedVenc as 'Vencimento do Atestado Médico',
-	PROF_Nome as 'Professor Responsável'
+	fk_Professor_PROF_CPF as 'CPF do Professor Responsável'
 
 FROM Cliente inner join Professor on Cliente.fk_Professor_PROF_CPF = Professor.PROF_CPF 
 
@@ -112,3 +103,4 @@ FROM Mensalidade inner join Cliente on Mensalidade.fk_Cliente_CLI_CPF = CLI_CPF
 
 
 
+SELECT CLI_Nome as 'Nome', CLI_CPF as 'CPF', CLI_Ender as 'Endereço', CLI_Tel as 'Telefone', CLI_Email as 'e-mail', CLI_Nasc as 'Data de Nascimento',CLI_Medic as 'Status do Atestado Médico', CLI_MedVenc as 'Vencimento do Atestado Médico', fk_Professor_PROF_CPF as 'CPF do Professor Responsável' FROM Cliente

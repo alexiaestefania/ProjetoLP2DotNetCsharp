@@ -33,6 +33,10 @@
             this.fITFREEDBDataSet1 = new lp2_proj.FITFREEDBDataSet1();
             this.pROFCPFTableAdapter2 = new lp2_proj.FITFREEDBDataSet1TableAdapters.PROFCPFTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROFCPFBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.label10 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -56,18 +60,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pROFCPFBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // fITFREEDBDataSet1
@@ -112,6 +112,41 @@
             this.panel1.Size = new System.Drawing.Size(552, 715);
             this.panel1.TabIndex = 0;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.dataGridView1.DataSource = this.pROFCPFBindingSource3;
+            this.dataGridView1.Location = new System.Drawing.Point(29, 410);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(491, 150);
+            this.dataGridView1.TabIndex = 21;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "CPF";
+            this.dataGridViewTextBoxColumn2.HeaderText = "CPF";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // pROFCPFBindingSource3
+            // 
+            this.pROFCPFBindingSource3.DataMember = "PROFCPF";
+            this.pROFCPFBindingSource3.DataSource = this.fITFREEDBDataSet1;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -131,7 +166,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(292, 571);
+            this.button2.Location = new System.Drawing.Point(292, 585);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 50);
             this.button2.TabIndex = 3;
@@ -142,12 +177,12 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::lp2_proj.Properties.Resources.butt2;
+            this.button1.BackgroundImage = global::lp2_proj.Properties.Resources.BUTT;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(109, 571);
+            this.button1.Location = new System.Drawing.Point(109, 585);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 50);
             this.button1.TabIndex = 2;
@@ -360,41 +395,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.dataGridView1.DataSource = this.pROFCPFBindingSource3;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 410);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(491, 150);
-            this.dataGridView1.TabIndex = 21;
-            // 
-            // pROFCPFBindingSource3
-            // 
-            this.pROFCPFBindingSource3.DataMember = "PROFCPF";
-            this.pROFCPFBindingSource3.DataSource = this.fITFREEDBDataSet1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Nome";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Nome";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "CPF";
-            this.dataGridViewTextBoxColumn2.HeaderText = "CPF";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -416,9 +416,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -426,14 +426,14 @@
         #endregion
         private System.Windows.Forms.MaskedTextBox TBprof;
         private System.Windows.Forms.Label label9;
-        private DBFITFREEV1DataSet4 dBFITFREEV1DataSet4;
+
         private System.Windows.Forms.BindingSource pROFCPFBindingSource;
-        private DBFITFREEV1DataSet4TableAdapters.PROFCPFTableAdapter pROFCPFTableAdapter;
+
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private DBFITFREEV1DataSet6 dBFITFREEV1DataSet6;
+
         private System.Windows.Forms.BindingSource pROFCPFBindingSource1;
-        private DBFITFREEV1DataSet6TableAdapters.PROFCPFTableAdapter pROFCPFTableAdapter1;
+
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -457,9 +457,8 @@
         private FITFREEDBDataSet1 fITFREEDBDataSet1;
         private System.Windows.Forms.BindingSource pROFCPFBindingSource2;
         private FITFREEDBDataSet1TableAdapters.PROFCPFTableAdapter pROFCPFTableAdapter2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cPFDataGridViewTextBoxColumn;
-        private DBFITFREEV1DataSet4TableAdapters.PROFCPFTableAdapter profcpfTableAdapter3;
+
+
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

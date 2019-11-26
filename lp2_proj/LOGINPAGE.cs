@@ -53,9 +53,9 @@ namespace lp2_proj
 
             if (Autentica.Read())
             {
-                MessageBox.Show("Autenticação correta. Bem vindo, " + textBox1.Text, "Bem-Vindo ao FitFree!");
                 F_main telacli = new F_main();
                 telacli.Show();
+                this.Hide();
                 
             }
             else

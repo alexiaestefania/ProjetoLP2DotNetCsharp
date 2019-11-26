@@ -49,6 +49,8 @@ namespace lp2_proj
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
             string Caminho = "Data Source=DESKTOP-D46400L\\SQLEXPRESS;Initial Catalog=FITFREEDB;Integrated Security=SSPI";
             SqlConnection conexaobanco = new SqlConnection(Caminho);
             conexaobanco.Open();
@@ -57,6 +59,7 @@ namespace lp2_proj
             Comandos.CommandText = "INSERT INTO Cliente VALUES(@cpf, @nome, @ender, @tele, @email, @nasc, @med, @medvenc, @prof)";
 
             // listagem de textboxes
+
 
             Comandos.Parameters.Add(new SqlParameter("@cpf", TBCPF.Text));
             Comandos.Parameters.Add(new SqlParameter("@nome", TBnome.Text));
@@ -67,15 +70,26 @@ namespace lp2_proj
             Comandos.Parameters.Add(new SqlParameter("@medvenc", TBvenc.Text));
             Comandos.Parameters.Add(new SqlParameter("@prof", TBprof.Text));
 
-            if (medbutton.Checked)
+                if (medbutton.Checked)
+                {
+                    Comandos.Parameters.Add(new SqlParameter("@med", 'S'));
+                }
+                else
+                    Comandos.Parameters.Add(new SqlParameter("@med", 'N'));
+
+            if ((TBCPF.Text == "") || (TBnome.Text == "") || (TBender.Text == "") || (TBtel.Text == "") || (TBnasc.Text == "") || (TBemail.Text == "") || (TBprof.Text == ""))
             {
-                Comandos.Parameters.Add(new SqlParameter("@med", 'S'));
+                MessageBox.Show("Preencha todos os campos.", "Erro!");
             }
+
             else
-                Comandos.Parameters.Add(new SqlParameter("@med", 'N'));
-            Comandos.ExecuteNonQuery();
-            MessageBox.Show("Cliente cadastrado com sucesso.", "Cadastro de Cliente");
-            conexaobanco.Close();
+
+            {
+
+                Comandos.ExecuteNonQuery();
+                MessageBox.Show("Cliente cadastrado com sucesso.", "Cadastro de Cliente");
+                conexaobanco.Close();
+            }
 
 
 
@@ -95,9 +109,6 @@ namespace lp2_proj
             medbutton2.Checked = false;
         }
 
-        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
     }
 }

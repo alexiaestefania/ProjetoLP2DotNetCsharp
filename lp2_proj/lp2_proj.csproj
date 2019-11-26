@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditAndSearch.cs" />
     <Compile Include="FITFREEDBDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -73,6 +74,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FITFREEDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITFREEDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITFREEDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITFREEDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITFREEDBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITFREEDBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITFREEDBDataSet7.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -199,6 +215,39 @@
     <None Include="FITFREEDBDataSet4.xss">
       <DependentUpon>FITFREEDBDataSet4.xsd</DependentUpon>
     </None>
+    <None Include="FITFREEDBDataSet5.xsc">
+      <DependentUpon>FITFREEDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITFREEDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITFREEDBDataSet5.xss">
+      <DependentUpon>FITFREEDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet6.xsc">
+      <DependentUpon>FITFREEDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITFREEDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITFREEDBDataSet6.xss">
+      <DependentUpon>FITFREEDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet7.xsc">
+      <DependentUpon>FITFREEDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITFREEDBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITFREEDBDataSet7.xss">
+      <DependentUpon>FITFREEDBDataSet7.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -285,6 +334,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fdf03373b9578db3ea13358a9b7473ed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

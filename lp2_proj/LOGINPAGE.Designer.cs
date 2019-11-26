@@ -59,9 +59,9 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::lp2_proj.Properties.Resources.TITLE_2;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(-2, -9);
+            this.pictureBox2.Location = new System.Drawing.Point(-3, -14);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(561, 293);
+            this.pictureBox2.Size = new System.Drawing.Size(562, 338);
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
             // 
@@ -121,7 +121,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::lp2_proj.Properties.Resources.butt2;
+            this.button1.BackgroundImage = global::lp2_proj.Properties.Resources.BUTT;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

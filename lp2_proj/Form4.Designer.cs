@@ -46,20 +46,17 @@
             this.profCadastrosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fITFREEDBDataSet3 = new lp2_proj.FITFREEDBDataSet3();
             this.pROFVIEWBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dBFITFREEV1DataSet8 = new lp2_proj.DBFITFREEV1DataSet8();
-            this.pROFVIEWTableAdapter = new lp2_proj.DBFITFREEV1DataSet8TableAdapters.PROFVIEWTableAdapter();
             this.profCadastrosTableAdapter = new lp2_proj.FITFREEDBDataSet3TableAdapters.ProfCadastrosTableAdapter();
             this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.profCadastrosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFVIEWBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dBFITFREEV1DataSet8)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImage = global::lp2_proj.Properties.Resources.butt2;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -91,8 +88,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::lp2_proj.Properties.Resources.fdf03373b9578db3ea13358a9b7473ed;
-            this.panel1.Location = new System.Drawing.Point(-33, -32);
+            this.panel1.BackgroundImage = global::lp2_proj.Properties.Resources.b43799373adcfe4eb738048cdc8a447b;
+            this.panel1.Location = new System.Drawing.Point(-33, -105);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(524, 689);
             this.panel1.TabIndex = 4;
@@ -214,20 +211,6 @@
             this.fITFREEDBDataSet3.DataSetName = "FITFREEDBDataSet3";
             this.fITFREEDBDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // pROFVIEWBindingSource
-            // 
-            this.pROFVIEWBindingSource.DataMember = "PROFVIEW";
-            this.pROFVIEWBindingSource.DataSource = this.dBFITFREEV1DataSet8;
-            // 
-            // dBFITFREEV1DataSet8
-            // 
-            this.dBFITFREEV1DataSet8.DataSetName = "DBFITFREEV1DataSet8";
-            this.dBFITFREEV1DataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pROFVIEWTableAdapter
-            // 
-            this.pROFVIEWTableAdapter.ClearBeforeFill = true;
-            // 
             // profCadastrosTableAdapter
             // 
             this.profCadastrosTableAdapter.ClearBeforeFill = true;
@@ -273,7 +256,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.profCadastrosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFVIEWBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dBFITFREEV1DataSet8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,9 +276,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private DBFITFREEV1DataSet8 dBFITFREEV1DataSet8;
+
         private System.Windows.Forms.BindingSource pROFVIEWBindingSource;
-        private DBFITFREEV1DataSet8TableAdapters.PROFVIEWTableAdapter pROFVIEWTableAdapter;
+
         private FITFREEDBDataSet3 fITFREEDBDataSet3;
         private System.Windows.Forms.BindingSource profCadastrosBindingSource;
         private FITFREEDBDataSet3TableAdapters.ProfCadastrosTableAdapter profCadastrosTableAdapter;
