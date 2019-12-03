@@ -14,7 +14,7 @@ namespace lp2_proj
     public partial class Form7 : Form
     {
 
-        public string Caminho = "Data Source=DESKTOP-D46400L\\SQLEXPRESS;Initial Catalog=FITFREEDB;Integrated Security=SSPI";
+        public string Caminho = "Data Source=LAPTOPMAMIS;Initial Catalog=FITFREEDB;Integrated Security=True";
         SqlConnection con;
         SqlDataAdapter adapt;
         DataTable dt;
@@ -47,7 +47,7 @@ namespace lp2_proj
         {
             SqlConnection con = new SqlConnection(Caminho);
             con.Open();
-            adapt = new SqlDataAdapter("SELECT * FROM Professor WHERE PROF_Nome LIKE '" + TextSearch.Text + "%'", con);
+            adapt = new SqlDataAdapter("SELECT PROF_Nome as 'Nome', PROF_CPF as 'CPF',  PROF_Ender as 'Endereço', PROF_Tel as 'Telefone', PROF_Nasc	as 'Data de Nascimento' FROM Professor WHERE PROF_Nome LIKE '" + TextSearch.Text + "%'", con);
             dt = new DataTable();
             adapt.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -67,11 +67,20 @@ namespace lp2_proj
             Comandos.Parameters.Add(new SqlParameter("@ender", PROFend.Text));
             Comandos.Parameters.Add(new SqlParameter("@tele", PROFtel.Text));
             Comandos.Parameters.Add(new SqlParameter("@nasc", PROFnasc.Text));
-            Comandos.ExecuteNonQuery();
 
-            MessageBox.Show("Cadastro de professor alterado com sucesso.", "Atualização Completa");
+            if ((PROFcpf.Text == "") || (PROFnome.Text == "") || (PROFend.Text == "") || (PROFtel.Text == "") || (PROFnasc.Text == ""))
+            {
+                MessageBox.Show("Preencha todos os campos.", "Erro!");
+            }
+            else
+            {
+                Comandos.ExecuteNonQuery();
 
-            con.Close();
+                MessageBox.Show("Cadastro de professor alterado com sucesso.", "Atualização Completa");
+                con.Close();
+            }
+            
+            
         }
 
         private void Button2_Click(object sender, EventArgs e)

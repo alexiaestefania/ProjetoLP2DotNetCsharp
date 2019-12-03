@@ -46,6 +46,8 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROFCPFBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.fITFREEDB_LAPTOPDATASET = new lp2_proj.FITFREEDB_LAPTOPDATASET();
             this.pROFCPFBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fITFREEDBDataSet1 = new lp2_proj.FITFREEDBDataSet1();
             this.button3 = new System.Windows.Forms.Button();
@@ -80,6 +82,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cLIENTVIEWBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.TextSearch = new System.Windows.Forms.TextBox();
+            this.pROFCPFTableAdapter1 = new lp2_proj.FITFREEDB_LAPTOPDATASETTableAdapters.PROFCPFTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTVIEWBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet)).BeginInit();
@@ -90,6 +93,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTVIEWBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fITFREEDB_LAPTOPDATASET)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet4)).BeginInit();
@@ -164,7 +169,7 @@
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11});
-            this.dataGridView3.DataSource = this.pROFCPFBindingSource;
+            this.dataGridView3.DataSource = this.pROFCPFBindingSource1;
             this.dataGridView3.Location = new System.Drawing.Point(66, 345);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
@@ -184,6 +189,16 @@
             this.dataGridViewTextBoxColumn11.HeaderText = "CPF";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // pROFCPFBindingSource1
+            // 
+            this.pROFCPFBindingSource1.DataMember = "PROFCPF";
+            this.pROFCPFBindingSource1.DataSource = this.fITFREEDB_LAPTOPDATASET;
+            // 
+            // fITFREEDB_LAPTOPDATASET
+            // 
+            this.fITFREEDB_LAPTOPDATASET.DataSetName = "FITFREEDB_LAPTOPDATASET";
+            this.fITFREEDB_LAPTOPDATASET.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pROFCPFBindingSource
             // 
@@ -209,6 +224,7 @@
             this.button3.TabIndex = 27;
             this.button3.Text = "Limpar Campos";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -450,7 +466,6 @@
             this.label1.Size = new System.Drawing.Size(149, 20);
             this.label1.TabIndex = 53;
             this.label1.Text = "Pesquisa por nome:";
-       
             // 
             // label10
             // 
@@ -541,6 +556,10 @@
             this.TextSearch.TabIndex = 59;
             this.TextSearch.TextChanged += new System.EventHandler(this.TextSearch_TextChanged_1);
             // 
+            // pROFCPFTableAdapter1
+            // 
+            this.pROFCPFTableAdapter1.ClearBeforeFill = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -569,6 +588,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTVIEWBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fITFREEDB_LAPTOPDATASET)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet4)).EndInit();
@@ -644,5 +665,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource cLIENTVIEWBindingSource4;
         private System.Windows.Forms.TextBox TextSearch;
+        private FITFREEDB_LAPTOPDATASET fITFREEDB_LAPTOPDATASET;
+        private System.Windows.Forms.BindingSource pROFCPFBindingSource1;
+        private FITFREEDB_LAPTOPDATASETTableAdapters.PROFCPFTableAdapter pROFCPFTableAdapter1;
     }
 }

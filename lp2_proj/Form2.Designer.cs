@@ -36,7 +36,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROFCPFBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.pROFCPFBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.fITFREEDB_LAPTOPDATASET = new lp2_proj.FITFREEDB_LAPTOPDATASET();
             this.label10 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -48,24 +49,28 @@
             this.medbutton2 = new System.Windows.Forms.RadioButton();
             this.medbutton = new System.Windows.Forms.RadioButton();
             this.TBemail = new System.Windows.Forms.TextBox();
-            this.TBnasc = new System.Windows.Forms.MaskedTextBox();
             this.TBtel = new System.Windows.Forms.MaskedTextBox();
             this.TBCPF = new System.Windows.Forms.MaskedTextBox();
             this.TBender = new System.Windows.Forms.TextBox();
             this.TBnome = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pROFCPFBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pROFCPFTableAdapter = new lp2_proj.FITFREEDB_LAPTOPDATASETTableAdapters.PROFCPFTableAdapter();
+            this.TBnasc = new System.Windows.Forms.MaskedTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fITFREEDBDataSet1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fITFREEDB_LAPTOPDATASET)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -84,6 +89,8 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::lp2_proj.Properties.Resources._6cb1fa98df7a47f834af9b21a53a6f60;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Controls.Add(this.TBnasc);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.button2);
@@ -96,13 +103,11 @@
             this.panel1.Controls.Add(this.medbutton2);
             this.panel1.Controls.Add(this.medbutton);
             this.panel1.Controls.Add(this.TBemail);
-            this.panel1.Controls.Add(this.TBnasc);
             this.panel1.Controls.Add(this.TBtel);
             this.panel1.Controls.Add(this.TBCPF);
             this.panel1.Controls.Add(this.TBender);
             this.panel1.Controls.Add(this.TBnome);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -121,7 +126,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
-            this.dataGridView1.DataSource = this.pROFCPFBindingSource3;
+            this.dataGridView1.DataSource = this.pROFCPFBindingSource4;
             this.dataGridView1.Location = new System.Drawing.Point(29, 410);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -142,10 +147,15 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // pROFCPFBindingSource3
+            // pROFCPFBindingSource4
             // 
-            this.pROFCPFBindingSource3.DataMember = "PROFCPF";
-            this.pROFCPFBindingSource3.DataSource = this.fITFREEDBDataSet1;
+            this.pROFCPFBindingSource4.DataMember = "PROFCPF";
+            this.pROFCPFBindingSource4.DataSource = this.fITFREEDB_LAPTOPDATASET;
+            // 
+            // fITFREEDB_LAPTOPDATASET
+            // 
+            this.fITFREEDB_LAPTOPDATASET.DataSetName = "FITFREEDB_LAPTOPDATASET";
+            this.fITFREEDB_LAPTOPDATASET.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label10
             // 
@@ -272,21 +282,10 @@
             this.TBemail.Size = new System.Drawing.Size(316, 23);
             this.TBemail.TabIndex = 11;
             // 
-            // TBnasc
-            // 
-            this.TBnasc.BackColor = System.Drawing.SystemColors.Window;
-            this.TBnasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.TBnasc.Location = new System.Drawing.Point(215, 224);
-            this.TBnasc.Mask = "00/00/0000";
-            this.TBnasc.Name = "TBnasc";
-            this.TBnasc.Size = new System.Drawing.Size(71, 23);
-            this.TBnasc.TabIndex = 10;
-            this.TBnasc.ValidatingType = typeof(System.DateTime);
-            // 
             // TBtel
             // 
             this.TBtel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.TBtel.Location = new System.Drawing.Point(215, 253);
+            this.TBtel.Location = new System.Drawing.Point(215, 224);
             this.TBtel.Mask = "(99) 00000-0000";
             this.TBtel.Name = "TBtel";
             this.TBtel.Size = new System.Drawing.Size(100, 23);
@@ -329,23 +328,12 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Endereço de e-mail:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(26, 225);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 18);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Data de Nascimento:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(111, 254);
+            this.label4.Location = new System.Drawing.Point(111, 225);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 18);
             this.label4.TabIndex = 3;
@@ -385,6 +373,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome Completo:";
             // 
+            // pROFCPFBindingSource3
+            // 
+            this.pROFCPFBindingSource3.DataMember = "PROFCPF";
+            this.pROFCPFBindingSource3.DataSource = this.fITFREEDBDataSet1;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -394,6 +387,32 @@
             this.pictureBox1.Size = new System.Drawing.Size(466, 723);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // pROFCPFTableAdapter
+            // 
+            this.pROFCPFTableAdapter.ClearBeforeFill = true;
+            // 
+            // TBnasc
+            // 
+            this.TBnasc.BackColor = System.Drawing.SystemColors.Window;
+            this.TBnasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.TBnasc.Location = new System.Drawing.Point(215, 253);
+            this.TBnasc.Mask = "00/00/0000";
+            this.TBnasc.Name = "TBnasc";
+            this.TBnasc.Size = new System.Drawing.Size(71, 23);
+            this.TBnasc.TabIndex = 23;
+            this.TBnasc.ValidatingType = typeof(System.DateTime);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(26, 254);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 18);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Data de Nascimento:";
             // 
             // Form2
             // 
@@ -417,6 +436,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fITFREEDB_LAPTOPDATASET)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROFCPFBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -438,13 +459,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TBnome;
         private System.Windows.Forms.TextBox TBender;
         private System.Windows.Forms.MaskedTextBox TBCPF;
         private System.Windows.Forms.MaskedTextBox TBtel;
-        private System.Windows.Forms.MaskedTextBox TBnasc;
         private System.Windows.Forms.TextBox TBemail;
         private System.Windows.Forms.RadioButton medbutton;
         private System.Windows.Forms.RadioButton medbutton2;
@@ -463,5 +482,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.BindingSource pROFCPFBindingSource3;
+        private FITFREEDB_LAPTOPDATASET fITFREEDB_LAPTOPDATASET;
+        private System.Windows.Forms.BindingSource pROFCPFBindingSource4;
+        private FITFREEDB_LAPTOPDATASETTableAdapters.PROFCPFTableAdapter pROFCPFTableAdapter;
+        private System.Windows.Forms.MaskedTextBox TBnasc;
+        private System.Windows.Forms.Label label5;
     }
 }

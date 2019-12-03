@@ -38,7 +38,7 @@ namespace lp2_proj
         {
 
 
-            string Caminho = "Data Source=DESKTOP-D46400L\\SQLEXPRESS;Initial Catalog=FITFREEDB;Integrated Security=SSPI";
+            string Caminho = "Data Source=LAPTOPMAMIS;Initial Catalog=FITFREEDB;Integrated Security=True";
             SqlConnection conexaobanco = new SqlConnection(Caminho);
 
                 conexaobanco.Open();

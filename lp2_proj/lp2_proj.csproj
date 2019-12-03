@@ -90,6 +90,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FITFREEDBDataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FITFREEDB_LAPTOPDATASET.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITFREEDB_LAPTOPDATASET.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +253,17 @@
     <None Include="FITFREEDBDataSet7.xss">
       <DependentUpon>FITFREEDBDataSet7.xsd</DependentUpon>
     </None>
+    <None Include="FITFREEDB_LAPTOPDATASET.xsc">
+      <DependentUpon>FITFREEDB_LAPTOPDATASET.xsd</DependentUpon>
+    </None>
+    <None Include="FITFREEDB_LAPTOPDATASET.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITFREEDB_LAPTOPDATASET.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITFREEDB_LAPTOPDATASET.xss">
+      <DependentUpon>FITFREEDB_LAPTOPDATASET.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -265,9 +281,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\di9KryMnT.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tumblr_oiwytz4dh41tf8vylo1_1280.png" />
@@ -294,9 +307,6 @@
     <None Include="Resources\BUTBACK.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\DFGDFGDF.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\BUTT.png" />
   </ItemGroup>
   <ItemGroup>
@@ -304,9 +314,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TITLE 3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\lifting-clipart-weight-training-3.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TITLE 2.png" />
@@ -319,9 +326,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ab633fd0aa1fad4bc88a908c61003ea1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\b43799373adcfe4eb738048cdc8a447b.jpg" />

@@ -22,8 +22,10 @@ namespace lp2_proj
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'fITFREEDB_LAPTOPDATASET.PROFCPF'. Você pode movê-la ou removê-la conforme necessário.
+            this.pROFCPFTableAdapter.Fill(this.fITFREEDB_LAPTOPDATASET.PROFCPF);
             // TODO: This line of code loads data into the 'fITFREEDBDataSet1.PROFCPF' table. You can move, or remove it, as needed.
-            this.pROFCPFTableAdapter2.Fill(this.fITFREEDBDataSet1.PROFCPF);
+        
             // TODO: esta linha de código carrega dados na tabela 'dBFITFREEV1DataSet6.PROFCPF'. Você pode movê-la ou removê-la conforme necessário.
 
 
@@ -51,7 +53,7 @@ namespace lp2_proj
         {
             
 
-            string Caminho = "Data Source=DESKTOP-D46400L\\SQLEXPRESS;Initial Catalog=FITFREEDB;Integrated Security=SSPI";
+            string Caminho = "Data Source = LAPTOPMAMIS; Initial Catalog = FITFREEDB; Integrated Security = True";
             SqlConnection conexaobanco = new SqlConnection(Caminho);
             conexaobanco.Open();
             SqlCommand Comandos = new SqlCommand();

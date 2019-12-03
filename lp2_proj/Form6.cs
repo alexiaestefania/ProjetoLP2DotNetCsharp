@@ -14,7 +14,7 @@ namespace lp2_proj
     public partial class Form6 : Form
     {
 
-        string caminho = "Data Source=DESKTOP-D46400L\\SQLEXPRESS;Initial Catalog=FITFREEDB;Integrated Security=SSPI";
+        string caminho = "Data Source=LAPTOPMAMIS;Initial Catalog=FITFREEDB;Integrated Security=True";
         SqlDataAdapter adapt;
         DataTable dt;
 
@@ -49,11 +49,19 @@ namespace lp2_proj
             Comandos.Parameters.Add(new SqlParameter("@valor", Convert.ToDouble(TBVALOR.Text)));
             Comandos.Parameters.Add(new SqlParameter("@mes", TBMES.Text));
             Comandos.Parameters.Add(new SqlParameter("@cpf", TBCPF.Text));
+            if ((TBVALOR.Text == "") || (TBMES.Text == "") || (TBCPF.Text == ""))
+            {
+                MessageBox.Show("Preencha todos os campos.", "Erro!");
+            }
+            else
+            {
+                Comandos.ExecuteNonQuery();
+                conexaobanco.Close();
+                MessageBox.Show("Parcela cadastrada no sistema.", "Adição de Mensalidade");
+            }
+           
 
-            Comandos.ExecuteNonQuery();
-            conexaobanco.Close();
-
-            MessageBox.Show("Parcela cadastrada no sistema.", "Adição de Mensalidade");
+            
         }
 
         private void TextSearch_TextChanged(object sender, EventArgs e)

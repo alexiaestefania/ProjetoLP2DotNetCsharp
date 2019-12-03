@@ -13,7 +13,7 @@ namespace lp2_proj
 {
     public partial class Form3 : Form
     {
-        public string Caminho = "Data Source=DESKTOP-D46400L\\SQLEXPRESS;Initial Catalog=FITFREEDB;Integrated Security=SSPI";
+        public string Caminho = "Data Source=LAPTOPMAMIS;Initial Catalog=FITFREEDB;Integrated Security=True";
         SqlDataAdapter adapt;
         DataTable dt;
 
@@ -25,8 +25,10 @@ namespace lp2_proj
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            this.pROFCPFTableAdapter.Fill(this.fITFREEDBDataSet1.PROFCPF);
-            //this.cLIENTVIEWTableAdapter2.Fill(this.fITFREEDBDataSet7.CLIENTVIEW);
+            // TODO: esta linha de código carrega dados na tabela 'fITFREEDB_LAPTOPDATASET.PROFCPF'. Você pode movê-la ou removê-la conforme necessário.
+            this.pROFCPFTableAdapter1.Fill(this.fITFREEDB_LAPTOPDATASET.PROFCPF);
+
+
 
             SqlConnection con = new SqlConnection(Caminho);
             con.Open();
@@ -126,7 +128,19 @@ namespace lp2_proj
             con.Close();
         }
 
-      
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TBCPF.Text = "";
+            TBnome.Text = "";
+            TBender.Text = "";
+            TBemail.Text = "";
+            TBtel.Text = "";
+            TBnasc.Text = "";
+            TBvenc.Text = "";
+            TBprof.Text = "";
+            medbutton.Checked = false;
+            medbutton2.Checked = false;
+        }
     }
 }
 
